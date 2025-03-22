@@ -8,5 +8,4 @@ public class UserGuessing {
         String name = s.next();
         RandomNumbers.guessNumber(name);
     }
-
 }
