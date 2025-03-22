@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class RandomNumbers {
-
     public static void guessNumber(String name) {
         Scanner sc = new Scanner(System.in);
         int random_Number = (int) (Math.random() * 100) + 1;
@@ -11,11 +10,9 @@ public class RandomNumbers {
         int trails = 5;
         int i;
         for (i = 0; i < trails; i++) {
-
             try {
                 System.out.print("Guess the Number:");
                 int guess_Number = sc.nextInt();
-
                 if (guess_Number >= 0 && guess_Number <= 100) {
                     if (guess_Number == random_Number) {
                         System.out.println("You guessed the number....");
@@ -38,7 +35,6 @@ public class RandomNumbers {
                     }
                 } else {
                     throw new Exception();
-
                 }
             } catch (Exception e) {
                 System.out.println("Guess Number must Between 1 to 100 only....");
@@ -53,12 +49,9 @@ public class RandomNumbers {
                     System.exit(1);
                 }
                 System.exit(1);
-
             }
-
         }
         if (i == trails) {
-
             System.out.println("Sorry!! You have used all attempts to guess a number.....");
             System.out.println("Better luck next time....");
             System.out.println("The Random Number is:" + random_Number);
@@ -70,10 +63,7 @@ public class RandomNumbers {
                 System.out.println("Thanks for using my Application....");
                 System.exit(1);
             }
-
         }
         sc.close();
-
     }
-
 }
